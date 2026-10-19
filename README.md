@@ -8,19 +8,21 @@ Use HappyHorse video generation/editing and retrieve the original task from Gemi
 
 Install [Google Gemini CLI](https://geminicli.com/docs/get-started/installation/) and complete its current main-model authentication. Tested version: **0.64.0**. Google directs some unpaid/Google One users to [Antigravity CLI](https://github.com/google-gemini/gemini-cli#readme); this package does not claim Antigravity compatibility.
 
-This is an independent native extension, with manifest ID **happyhorse-by-ace-data-cloud** and publisher **AceDataCloud/HappyHorseGemini**. The official gallery crawls public root manifests with `gemini-cli-extension` topics; **this review package is not yet an indexed official card**. Main remains initialization until review/authorized merge. Install the review branch explicitly:
-
-```bash
-gemini extensions install https://github.com/AceDataCloud/HappyHorseGemini --ref codex/happyhorse-native-extension
-```
-
-Read the native consent prompt. The extension adds only HappyHorse MCP tools, the `happyhorse-video` Skill and `/happyhorse-check`, `/happyhorse-task`. No hooks, local server install or automatic media generation.
-
-After a reviewed stable merge, the ordinary command will be:
+This independent native extension uses manifest ID **happyhorse-by-ace-data-cloud** and publisher **AceDataCloud/HappyHorseGemini**. Install the release from its public repository:
 
 ```bash
 gemini extensions install https://github.com/AceDataCloud/HappyHorseGemini
 ```
+
+Pin version **v0.1.0** when you need a reproducible install:
+
+```bash
+gemini extensions install https://github.com/AceDataCloud/HappyHorseGemini --ref v0.1.0
+```
+
+[Versioned release](https://github.com/AceDataCloud/HappyHorseGemini/releases/tag/v0.1.0) · [Official gallery](https://geminicli.com/extensions/). Gallery indexing is a separate daily process; published source/release and passing installation do not prove a search card is present.
+
+Read the native consent prompt. The extension adds only HappyHorse MCP tools, the `happyhorse-video` Skill and `/happyhorse-check`, `/happyhorse-task`. No hooks, local server install or automatic media generation.
 
 ## 2. Register/sign in and get a service Token
 
