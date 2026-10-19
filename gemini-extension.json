@@ -1,0 +1,31 @@
+{
+  "name": "happyhorse-by-ace-data-cloud",
+  "version": "0.1.0",
+  "description": "HappyHorse video generation and editing via Ace Data Cloud, with native Token setup and same-task results. Independent integration, not an official service product.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "happyhorse-by-ace-data-cloud": {
+      "httpUrl": "https://happyhorse.mcp.acedata.cloud/mcp",
+      "headers": {
+        "Authorization": "Bearer ${ACEDATACLOUD_HAPPYHORSE_TOKEN}"
+      },
+      "includeTools": [
+        "happyhorse_list_models",
+        "happyhorse_generate_video",
+        "happyhorse_generate_video_from_image",
+        "happyhorse_generate_video_from_references",
+        "happyhorse_edit_video",
+        "happyhorse_get_task",
+        "happyhorse_get_tasks_batch"
+      ]
+    }
+  },
+  "settings": [
+    {
+      "name": "Ace Data Cloud HappyHorse API Token",
+      "description": "Sign in or register at https://platform.acedata.cloud/console/applications?utm_source=gemini-cli&utm_medium=referral&utm_campaign=evergreen&utm_content=happyhorsegemini_install_token . Open General application, copy or create a service Key with HappyHorse access. Paste the raw token without Bearer. Check permissions, balance and price before generation.",
+      "envVar": "ACEDATACLOUD_HAPPYHORSE_TOKEN",
+      "sensitive": true
+    }
+  ]
+}

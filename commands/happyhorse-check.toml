@@ -1,0 +1,4 @@
+description = "Check HappyHorse setup without creating media"
+prompt = """
+Activate the happyhorse-video skill. Call only happyhorse_list_models on happyhorse-by-ace-data-cloud and summarize the reference result. Do not generate or edit video, query tasks, or infer balance.
+"""
